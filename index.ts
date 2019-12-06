@@ -6,7 +6,7 @@ import {
   distinctUntilChanged
 } from "rxjs/operators";
 
-const foo = document.getElementById("A");
+const foo = document.getElementById("filterer");
 const foo$ = fromEvent(foo, "input").pipe(map(e => foo.value));
 
 const suggestions$ = foo$.pipe(
